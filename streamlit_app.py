@@ -12,7 +12,6 @@ file_path = './test_data.xlsx'
 df_test = pd.read_excel(file_path)
 st.dataframe(df_test)
 training_columns = ['Gender', 'Domain', 'Experience', 'Niveau']
-st.write(df_test.columns)
 # Min-Max Scaling function
 def min_max_scaling(column):
     try:
